@@ -1,0 +1,42 @@
+:root {
+  font-family: 'DM Serif Text', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 30px;
+  color: whitesmoke;
+
+  background-color: #363636;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.headerContainer {
+  height: 10vh;
+  width: 92vw;
+  background-color: aqua;
+}
+
+.overviewContainer {
+  height: 100vh;
+  width: 92vw;
+  position: relative;
+}
+
+.overviewImage img {
+  position: absolute;
+  height: 60vh;
+  top: calc(50% - 30vh);
+  right: 0;
+  z-index: -1;
+}
+
+.overviewText {
+  position: absolute;
+  top: calc(50% - 30vh);
+  width: 50vw;
+}
