@@ -18,7 +18,12 @@
 .headerContainer {
   height: 10vh;
   width: 92vw;
-  background-color: aqua;
+}
+
+#logo {
+  width: 3vw;
+  margin-left: -3vw;
+  margin-top: 1vw;
 }
 
 .overviewContainer {
@@ -39,4 +44,9 @@
   position: absolute;
   top: calc(50% - 30vh);
   width: 40vw;
+}
+
+.gatheringIcons {
+  width: 15vw;
+  height: auto;
 }

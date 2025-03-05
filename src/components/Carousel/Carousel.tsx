@@ -19,7 +19,7 @@ export interface CarouselItem {
 
 export interface CarouselProps {
   items?: CarouselItem[];
-  baseWidth?: number;
+  className?: string; // Added className prop for custom styling
   autoplay?: boolean;
   autoplayDelay?: number;
   pauseOnHover?: boolean;
@@ -67,15 +67,20 @@ const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 };
 
 export default function Carousel({
   items = DEFAULT_ITEMS,
-  baseWidth = 300,
+  className = "",
   autoplay = false,
   autoplayDelay = 3000,
   pauseOnHover = false,
   loop = false,
   round = false,
 }: CarouselProps): JSX.Element {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState<number>(0);
   const containerPadding = 16;
-  const itemWidth = baseWidth - containerPadding * 2;
+
+  // Calculate item width based on container dimensions
+  const itemWidth =
+    containerWidth > 0 ? containerWidth - containerPadding * 2 : 0;
   const trackItemOffset = itemWidth + GAP;
 
   const carouselItems = loop ? [...items, items[0]] : items;
@@ -84,7 +89,31 @@ export default function Carousel({
   const [isHovered, setIsHovered] = useState<boolean>(false);
   const [isResetting, setIsResetting] = useState<boolean>(false);
 
-  const containerRef = useRef<HTMLDivElement>(null);
+  // Update container dimensions when it resizes
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const updateDimensions = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth);
+      }
+    };
+
+    // Initial measurement
+    updateDimensions();
+
+    // Set up resize observer
+    const resizeObserver = new ResizeObserver(updateDimensions);
+    resizeObserver.observe(containerRef.current);
+
+    return () => {
+      if (containerRef.current) {
+        resizeObserver.unobserve(containerRef.current);
+      }
+      resizeObserver.disconnect();
+    };
+  }, []);
+
   useEffect(() => {
     if (pauseOnHover && containerRef.current) {
       const container = containerRef.current;
@@ -168,15 +197,14 @@ export default function Carousel({
   return (
     <div
       ref={containerRef}
-      className={`carousel-container ${round ? "round" : ""}`}
+      className={`carousel-container ${round ? "round" : ""} ${className}`}
       style={{
-        width: `${baseWidth}px`,
-        ...(round && { height: `${baseWidth}px`, borderRadius: "50%" }),
+        ...(round && { aspectRatio: "1/1", borderRadius: "50%" }),
       }}
     >
       <motion.div
         className="carousel-track"
-        drag="x"
+        drag={itemWidth > 0 ? "x" : false} // Only enable drag when dimensions are available
         {...dragProps}
         style={{
           width: itemWidth,
