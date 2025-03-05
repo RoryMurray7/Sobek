@@ -1,70 +1,48 @@
-/*
-	jsrepo 1.41.3
-	Installed from https://reactbits.dev/ts/default/
-	05-03-2025
-*/
-
-import { useEffect, useState, useRef, JSX } from "react";
-import { motion, PanInfo, useMotionValue, useTransform } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
-// import {
-//   FiCircle,
-//   FiCode,
-//   FiFileText,
-//   FiLayers,
-//   FiLayout,
-// } from "react-icons/fi";
+import {
+  FiCircle,
+  FiCode,
+  FiFileText,
+  FiLayers,
+  FiLayout,
+} from "react-icons/fi";
+
 import "./Carousel.css";
 
-// export interface CarouselItem {
-//   title: string;
-//   description: string;
-//   id: number;
-//   icon: JSX.Element;
-// }
-
-export interface CarouselProps {
-  items?: JSX.Element[];
-  baseWidth?: number;
-  autoplay?: boolean;
-  autoplayDelay?: number;
-  pauseOnHover?: boolean;
-  loop?: boolean;
-  round?: boolean;
-}
-
-// const DEFAULT_ITEMS: CarouselItem[] = [
-//   {
-//     title: "Text Animations",
-//     description: "Cool text animations for your projects.",
-//     id: 1,
-//     icon: <FiFileText className="carousel-icon" />,
-//   },
-//   {
-//     title: "Animations",
-//     description: "Smooth animations for your projects.",
-//     id: 2,
-//     icon: <FiCircle className="carousel-icon" />,
-//   },
-//   {
-//     title: "Components",
-//     description: "Reusable components for your projects.",
-//     id: 3,
-//     icon: <FiLayers className="carousel-icon" />,
-//   },
-//   {
-//     title: "Backgrounds",
-//     description: "Beautiful backgrounds and patterns for your projects.",
-//     id: 4,
-//     icon: <FiLayout className="carousel-icon" />,
-//   },
-//   {
-//     title: "Common UI",
-//     description: "Common UI components are coming soon!",
-//     id: 5,
-//     icon: <FiCode className="carousel-icon" />,
-//   },
-// ];
+const DEFAULT_ITEMS = [
+  {
+    title: "Text Animations",
+    description: "Cool text animations for your projects.",
+    id: 1,
+    icon: <FiFileText className="carousel-icon" />,
+  },
+  {
+    title: "Animations",
+    description: "Smooth animations for your projects.",
+    id: 2,
+    icon: <FiCircle className="carousel-icon" />,
+  },
+  {
+    title: "Components",
+    description: "Reusable components for your projects.",
+    id: 3,
+    icon: <FiLayers className="carousel-icon" />,
+  },
+  {
+    title: "Backgrounds",
+    description: "Beautiful backgrounds and patterns for your projects.",
+    id: 4,
+    icon: <FiLayout className="carousel-icon" />,
+  },
+  {
+    title: "Common UI",
+    description: "Common UI components are coming soon!",
+    id: 5,
+    icon: <FiCode className="carousel-icon" />,
+  },
+];
 
 const DRAG_BUFFER = 0;
 const VELOCITY_THRESHOLD = 500;
@@ -72,25 +50,25 @@ const GAP = 16;
 const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 };
 
 export default function Carousel({
-  items = [],
+  items = DEFAULT_ITEMS,
   baseWidth = 300,
   autoplay = false,
   autoplayDelay = 3000,
   pauseOnHover = false,
   loop = false,
   round = false,
-}: CarouselProps): JSX.Element {
+}) {
   const containerPadding = 16;
   const itemWidth = baseWidth - containerPadding * 2;
   const trackItemOffset = itemWidth + GAP;
 
   const carouselItems = loop ? [...items, items[0]] : items;
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const x = useMotionValue(0);
-  const [isHovered, setIsHovered] = useState<boolean>(false);
-  const [isResetting, setIsResetting] = useState<boolean>(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
 
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef(null);
   useEffect(() => {
     if (pauseOnHover && containerRef.current) {
       const container = containerRef.current;
@@ -110,7 +88,7 @@ export default function Carousel({
       const timer = setInterval(() => {
         setCurrentIndex((prev) => {
           if (prev === items.length - 1 && loop) {
-            return prev + 1; // Animate to clone.
+            return prev + 1;
           }
           if (prev === carouselItems.length - 1) {
             return loop ? 0 : prev;
@@ -141,10 +119,7 @@ export default function Carousel({
     }
   };
 
-  const handleDragEnd = (
-    _: MouseEvent | TouchEvent | PointerEvent,
-    info: PanInfo
-  ): void => {
+  const handleDragEnd = (_, info) => {
     const offset = info.offset.x;
     const velocity = info.velocity.x;
     if (offset < -DRAG_BUFFER || velocity < -VELOCITY_THRESHOLD) {
@@ -203,6 +178,7 @@ export default function Carousel({
             -(index - 1) * trackItemOffset,
           ];
           const outputRange = [90, 0, -90];
+          // eslint-disable-next-line react-hooks/rules-of-hooks
           const rotateY = useTransform(x, range, outputRange, { clamp: false });
           return (
             <motion.div
@@ -216,7 +192,13 @@ export default function Carousel({
               }}
               transition={effectiveTransition}
             >
-              { item }
+              <div className={`carousel-item-header ${round ? "round" : ""}`}>
+                <span className="carousel-icon-container">{item.icon}</span>
+              </div>
+              <div className="carousel-item-content">
+                <div className="carousel-item-title">{item.title}</div>
+                <p className="carousel-item-description">{item.description}</p>
+              </div>
             </motion.div>
           );
         })}

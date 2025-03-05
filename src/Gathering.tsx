@@ -1,30 +1,16 @@
-import Carousel from "./components/Carousel/Carousel"
-
-const carouselItems = [
-    (
-        <>
-            <h1>Hello</h1>
-        </>
-    ),
-    (
-        <>
-            <h1>World</h1>
-        </>
-    )
-]
+import Carousel from "./components/Carousel/Carousel";
 
 function Gathering() {
-    return (
-      <Carousel
-        items={carouselItems}
-        baseWidth={800}
-        autoplay={true}
-        autoplayDelay={4000}
-        pauseOnHover={true}
-        loop={true}
-        round={false}
-        />
-    )
-  }
+  return (
+    <Carousel
+      baseWidth={800}
+      autoplay={true}
+      autoplayDelay={4000}
+      pauseOnHover={true}
+      loop={true}
+      round={false}
+    />
+  );
+}
 
-export default Gathering
+export default Gathering;
