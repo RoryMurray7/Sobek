@@ -2,7 +2,7 @@
   font-family: 'DM Serif Text', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 2.4vw;
   color: whitesmoke;
 
   background-color: #363636;
@@ -38,5 +38,5 @@
 .overviewText {
   position: absolute;
   top: calc(50% - 30vh);
-  width: 50vw;
+  width: 40vw;
 }
