@@ -37,14 +37,19 @@ const myItems = [
 
 function Gathering() {
   return (
-    <Carousel
-      items={myItems}
-      autoplay={true}
-      autoplayDelay={5000}
-      pauseOnHover={true}
-      loop={true}
-      round={false}
-    />
+    <div className="Gathering">
+      <Carousel
+        items={myItems}
+        autoplay={true}
+        autoplayDelay={4000}
+        pauseOnHover={true}
+        loop={true}
+        round={false}
+      />
+      <div className="gatheringTitle">
+        <h1>Intelligence Gathering</h1>
+      </div>
+    </div>
   );
 }
 

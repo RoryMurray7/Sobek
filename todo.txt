@@ -1,0 +1,4 @@
+make the carousel look better, make the movement slower
+make scroling resistive
+make background change as you scroll
+add text animations
