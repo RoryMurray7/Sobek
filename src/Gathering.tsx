@@ -41,7 +41,7 @@ function Gathering() {
       <Carousel
         items={myItems}
         autoplay={true}
-        autoplayDelay={4000}
+        autoplayDelay={5000}
         pauseOnHover={true}
         loop={true}
         round={false}

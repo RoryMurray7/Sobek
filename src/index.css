@@ -70,8 +70,8 @@
   flex-direction: row;
   align-items: center;
   height: 120vh;
-  width: 92vw;
   position: relative;
+  margin-left: 4vw;
 }
 
 .analysisTitle {
@@ -87,7 +87,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 12vw;
+  right: 6vw;
   top: 20vw;
 }
 
@@ -103,6 +103,6 @@
 .microchip {
   width: 35vw;
   position: absolute;
-  right: 12vw;
+  right: 6vw;
   top: 20vw;
 }
