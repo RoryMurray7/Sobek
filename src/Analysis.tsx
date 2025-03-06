@@ -7,7 +7,7 @@ function Analysis() {
       <div className="analysisTitle">
         <h1>Data Analysis</h1>
       </div>
-      <div className="Orb">
+      <div style={{ width: "100%", height: "600px", position: "relative" }}>
         <Orb
           hoverIntensity={0.5}
           rotateOnHover={true}
