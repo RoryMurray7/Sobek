@@ -13,10 +13,10 @@ function Analysis() {
         <div className="letterGlitchContainer">
           <div className="letterGlitch">
             <LetterGlitch
-            glitchColors={["#FF0000", "#00FF00", "#0000FF"]}
+            glitchColors={["#b76b2c", "b3522c", "#a67a2c"]}
             glitchSpeed={0.1}
-            centerVignette={true}
-            outerVignette={false}
+            centerVignette={false}
+            outerVignette={true}
             smooth={true}
             />
           </div>
