@@ -15,6 +15,12 @@
   margin-right: 4vw;
 }
 
+.leftHeader {
+  position: absolute;
+  top: calc(50% - 30vh);
+  width: 40vw;
+}
+
 .headerContainer {
   height: 10vh;
   width: 92vw;
@@ -26,11 +32,8 @@
   margin-top: 1vw;
 }
 
-.overviewContainer {
+#overviewContainer {
   margin-top: -20vh;
-  height: 120vh;
-  width: 92vw;
-  position: relative;
 }
 
 .overviewImage img {
@@ -39,17 +42,6 @@
   top: calc(50% - 30vh);
   right: 0;
   z-index: -1;
-}
-
-.leftHeader {
-  position: absolute;
-  top: calc(50% - 30vh);
-  width: 40vw;
-}
-
-.gatheringIcons {
-  width: 15vw;
-  height: auto;
 }
 
 .gatheringContainer {
@@ -65,13 +57,18 @@
   width: 30vw;
 }
 
-.analysisContainer {
+.gatheringIcons {
+  width: 15vw;
+  height: auto;
+}
+
+.sectionContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 120vh;
+  width: 92vw;
   position: relative;
-  margin-left: 4vw;
 }
 
 .analysisTitle {

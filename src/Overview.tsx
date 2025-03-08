@@ -3,7 +3,7 @@ import "./index.css";
 
 function Overview() {
   return (
-    <div className="overviewContainer">
+    <div className="sectionContainer" id="overviewContainer">
       <div className="leftHeader">
         <h1>A new generation of Global Military Intelligence</h1>
       </div>

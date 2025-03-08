@@ -37,7 +37,7 @@ const myItems = [
 
 function Gathering() {
   return (
-    <div className="Gathering">
+    <div className="sectionContainer">
       <Carousel
         items={myItems}
         autoplay={true}

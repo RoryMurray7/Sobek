@@ -3,7 +3,7 @@ import "./index.css";
 
 function Tagline() {
   return (
-    <div className="overviewContainer">
+    <div className="sectionContainer">
       <div className="leftHeader">
         <h1>See the Unseen</h1>
       </div>
