@@ -11,6 +11,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   margin-left: 4vw;
   margin-right: 4vw;
 }
@@ -20,17 +22,17 @@
   flex-direction: row;
   align-items: center;
   height: 120vh;
-  width: 92vw;
+  width: 100%;
   position: relative;
 }
 
 .leftHeader {
   position: absolute;
-  top: calc(50% - 30vh);
   width: 40vw;
 }
 
 .rightHeader {
+  text-align: right;
   position: absolute;
   right: 0;
   width: 30vw;
@@ -38,17 +40,24 @@
 
 .headerContainer {
   height: 10vh;
-  width: 92vw;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #logo {
   width: 3vw;
-  margin-left: -3vw;
   margin-top: 1vw;
+  margin-left: 2vw;
 }
 
 #overviewContainer {
   margin-top: -20vh;
+}
+
+#overviewHeader {
+  top: calc(50% - 30vh);
 }
 
 .overviewImage img {
@@ -62,6 +71,9 @@
 .gatheringIcons {
   width: 15vw;
   height: auto;
+}
+
+.analysisIcon {
 }
 
 .letterGlitchContainer {

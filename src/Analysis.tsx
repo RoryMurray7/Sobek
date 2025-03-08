@@ -4,7 +4,7 @@ import microchip from "./assets/microchip.png";
 
 function Analysis() {
   return (
-    <div className="sectionContainer">
+    <div className="sectionContainer" style={{ backgroundColor: "#303030" }}>
       <div className="leftHeader">
         <h1>Data Analysis</h1>
       </div>

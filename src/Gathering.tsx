@@ -37,7 +37,7 @@ const myItems = [
 
 function Gathering() {
   return (
-    <div className="sectionContainer">
+    <div className="sectionContainer" style={{ backgroundColor: "#707070" }}>
       <Carousel
         items={myItems}
         autoplay={true}

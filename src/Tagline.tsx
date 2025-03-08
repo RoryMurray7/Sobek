@@ -3,7 +3,7 @@ import "./index.css";
 
 function Tagline() {
   return (
-    <div className="sectionContainer">
+    <div className="sectionContainer" style={{ backgroundColor: "#B0B0B0" }}>
       <div className="leftHeader">
         <h1>See the Unseen</h1>
       </div>
