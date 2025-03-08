@@ -46,7 +46,7 @@ function Gathering() {
         loop={true}
         round={false}
       />
-      <div className="gatheringTitle">
+      <div className="rightHeader">
         <h1>Intelligence Gathering</h1>
       </div>
     </div>

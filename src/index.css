@@ -15,10 +15,25 @@
   margin-right: 4vw;
 }
 
+.sectionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 120vh;
+  width: 92vw;
+  position: relative;
+}
+
 .leftHeader {
   position: absolute;
   top: calc(50% - 30vh);
   width: 40vw;
+}
+
+.rightHeader {
+  position: absolute;
+  right: 0;
+  width: 30vw;
 }
 
 .headerContainer {
@@ -44,37 +59,9 @@
   z-index: -1;
 }
 
-.gatheringContainer {
-  display: flex;
-  flex-direction: row;
-  height: 120vh;
-  align-items: center;
-}
-
-.gatheringTitle {
-  position: absolute;
-  right: 0;
-  width: 30vw;
-}
-
 .gatheringIcons {
   width: 15vw;
   height: auto;
-}
-
-.sectionContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 120vh;
-  width: 92vw;
-  position: relative;
-}
-
-.analysisTitle {
-  position: absolute;
-  width: 40vw;
-  top: 30.2vw
 }
 
 .letterGlitchContainer {

@@ -5,7 +5,7 @@ import microchip from "./assets/microchip.png";
 function Analysis() {
   return (
     <div className="sectionContainer">
-      <div className="analysisTitle">
+      <div className="leftHeader">
         <h1>Data Analysis</h1>
       </div>
       <div className="analysisIcon">
