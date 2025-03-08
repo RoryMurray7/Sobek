@@ -57,8 +57,8 @@
 }
 
 #overviewHeader {
-  top: calc(50% - 30vh);
   z-index: 1;
+  top: calc(50% - 30vh);
 }
 
 .overviewImage img {
@@ -68,12 +68,17 @@
   right: 0;
 }
 
+.taglineImage img {
+  position: absolute;
+  height: 60vh;
+  top: calc(50% - 30vh);
+  right: 0;
+  border-radius: 1vw;
+}
+
 .gatheringIcons {
   width: 15vw;
   height: auto;
-}
-
-.analysisIcon {
 }
 
 .letterGlitchContainer {
