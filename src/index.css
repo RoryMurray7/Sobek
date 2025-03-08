@@ -41,7 +41,7 @@
   z-index: -1;
 }
 
-.overviewText {
+.leftHeader {
   position: absolute;
   top: calc(50% - 30vh);
   width: 40vw;
@@ -52,7 +52,7 @@
   height: auto;
 }
 
-.Gathering {
+.gatheringContainer {
   display: flex;
   flex-direction: row;
   height: 120vh;
