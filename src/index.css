@@ -17,6 +17,11 @@
   margin-right: 4vw;
 }
 
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
 .sectionContainer {
   display: flex;
   flex-direction: row;
