@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, RefObject } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import "./TrueFocus.css";
 
@@ -31,9 +31,9 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
   const words = sentence.split(" ");
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [lastActiveIndex, setLastActiveIndex] = useState<number | null>(null);
-  const containerRef: RefObject<HTMLDivElement> = useRef(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const wordRefs: React.MutableRefObject<(HTMLSpanElement | null)[]> = useRef(
-    [],
+    []
   );
   const [focusRect, setFocusRect] = useState<FocusRect>({
     x: 0,
@@ -44,12 +44,9 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
 
   useEffect(() => {
     if (!manualMode) {
-      const interval = setInterval(
-        () => {
-          setCurrentIndex((prev) => (prev + 1) % words.length);
-        },
-        (animationDuration + pauseBetweenAnimations) * 1000,
-      );
+      const interval = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % words.length);
+      }, (animationDuration + pauseBetweenAnimations) * 1000);
 
       return () => clearInterval(interval);
     }
@@ -92,7 +89,9 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
         return (
           <span
             key={index}
-            ref={(el) => (wordRefs.current[index] = el)}
+            ref={(el) => {
+              wordRefs.current[index] = el;
+            }}
             className={`focus-word ${manualMode ? "manual" : ""} ${
               isActive && !manualMode ? "active" : ""
             }`}
@@ -103,8 +102,8 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
                     ? `blur(0px)`
                     : `blur(${blurAmount}px)`
                   : isActive
-                    ? `blur(0px)`
-                    : `blur(${blurAmount}px)`,
+                  ? `blur(0px)`
+                  : `blur(${blurAmount}px)`,
                 transition: `filter ${animationDuration}s ease`,
                 "--border-color": borderColor,
                 "--glow-color": glowColor,
