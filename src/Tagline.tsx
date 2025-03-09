@@ -1,11 +1,26 @@
 import armyDesert from "./assets/armyDesert.jpg";
 import "./index.css";
+import TrueFocus from "./components/TrueFocus/TrueFocus";
 
 function Tagline() {
   return (
     <div className="sectionContainer" style={{ backgroundColor: "#B0B0B0" }}>
       <div className="leftHeader" id="overviewHeader">
-        <h1>See the Unseen</h1>
+        <div id="trueFocusContainer">
+          <TrueFocus
+            sentence="See the Unseen"
+            manualMode={false}
+            blurAmount={4}
+            borderColor="#b76b2c"
+            animationDuration={2}
+            pauseBetweenAnimations={3}
+          />
+        </div>
+        <p id="taglineDescription">
+          Sobek is the worlds only intelligence platform that combines human
+          intelligence with machine learning to provide unprecedented insight
+          into your adversaries, whoever they may be.
+        </p>
       </div>
 
       <div className="taglineImage">
