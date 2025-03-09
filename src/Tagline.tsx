@@ -10,7 +10,7 @@ function Tagline() {
           <TrueFocus
             sentence="See the Unseen"
             manualMode={false}
-            blurAmount={4}
+            blurAmount={5}
             borderColor="#b76b2c"
             animationDuration={2}
             pauseBetweenAnimations={3}
