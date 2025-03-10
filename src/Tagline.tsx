@@ -4,7 +4,7 @@ import TrueFocus from "./components/TrueFocus/TrueFocus";
 
 function Tagline() {
   return (
-    <div className="sectionContainer" style={{ backgroundColor: "#B0B0B0" }}>
+    <div className="sectionContainer" style={{ backgroundColor: "#909090" }}>
       <div className="leftHeader" id="overviewHeader">
         <div id="trueFocusContainer">
           <TrueFocus
