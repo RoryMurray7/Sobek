@@ -1,36 +1,41 @@
+import "./Capabilities.css";
+import baseSatellite from "./assets/baseSatellite.png";
+import droneImage from "./assets/parrotAnafi.png";
+import radarDish from "./assets/radarDish.png";
+
 function Capabilities() {
   return (
-    <div className="sectionContainer" id="capabilitiesContainer" style={{ backgroundColor: "#505050" }}>
-
-      <div className="leftHeader">
-        <h1>Our Capabilities</h1>
+    <div
+      className="sectionContainer"
+      id="capabilitiesContainer"
+      style={{ backgroundColor: "#505050" }}
+    >
+      <div className="leftHeader" style={{ width: "50vw" }}>
+        <h1>Unrivaled Capabilities</h1>
       </div>
 
       <div className="capabilitiesCardContainer">
-
         <div className="capabilitiesCard">
-          <div className="cababilitiesCardImage">
-          </div>
-          <p>Satelite's</p>
+          <img className="capabilitiesCardImage" src={droneImage}></img>
+          <p className="imageTitle">Aerial Reconnaissance</p>
         </div>
 
         <div className="capabilitiesCard">
-          <div className="cababilitiesCardImage">
-          </div>
+          <img className="capabilitiesCardImage" src={baseSatellite}></img>
+          <p className="imageTitle">
+            Satellite<br></br>Imagery
+          </p>
         </div>
 
         <div className="capabilitiesCard">
-          <div className="cababilitiesCardImage">
-          </div>
+          <img className="capabilitiesCardImage" src={radarDish}></img>
+          <p className="imageTitle">Radar & Signal Monitoring</p>
         </div>
 
         <div className="capabilitiesCard">
-          <div className="cababilitiesCardImage">
-          </div>
+          <div className="capabilitiesCardImage"></div>
         </div>
-      
       </div>
-
     </div>
   );
 }

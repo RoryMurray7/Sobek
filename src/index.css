@@ -90,32 +90,6 @@ img {
   border-radius: 1vw;
 }
 
-#capabilitiesContainer {
-  flex-direction: column;
-  align-items: start;
-}
-.capabilitiesCardContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.capabilitiesCard {
-  width: 18vw;
-  height: fit-content;
-  background-color: wheat;
-  display: flex;
-  flex-direction: column;
-}
-
-.cababilitiesCardImage {
-  background-color: antiquewhite;
-  width: 100%;
-  height: 15vw;
-  border-style: solid;
-  border-radius: 1vw;
-}
 .gatheringIcons {
   width: 15vw;
   height: auto;
