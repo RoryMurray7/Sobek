@@ -1,6 +1,6 @@
 function Capabilities() {
   return (
-    <div className="sectionContainer" id="capabilitiesContainer" style={{ backgroundColor: "#505050" }}>
+    <div className="sectionContainer" id="capabilitiesContainer">
 
       <div className="leftHeader">
         <h1>Our Capabilities</h1>
@@ -17,6 +17,7 @@ function Capabilities() {
         <div className="capabilitiesCard">
           <div className="cababilitiesCardImage">
           </div>
+          <p>Satellite Imagery</p>
         </div>
 
         <div className="capabilitiesCard">
