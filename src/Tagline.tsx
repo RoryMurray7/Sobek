@@ -5,7 +5,7 @@ import TrueFocus from "./components/TrueFocus/TrueFocus";
 function Tagline() {
   return (
     <div className="sectionContainer">
-      <div className="leftHeader" id="overviewHeader">
+      <div className="leftHeader large" id="overviewHeader">
         <div id="trueFocusContainer">
           <TrueFocus
             sentence="See the Unseen"

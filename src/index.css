@@ -2,10 +2,10 @@
   font-family: 'DM Serif Text', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: 2.4vw;
   color: whitesmoke;
 
   background-color: #363636;
+  background-image: linear-gradient(#505050, #101010);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,6 +15,10 @@
   scrollbar-width: none;  /* Firefox */
   margin-left: 4vw;
   margin-right: 4vw;
+}
+
+.large {
+  font-size: 2.4vw;
 }
 
 img {

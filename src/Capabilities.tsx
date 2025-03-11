@@ -8,7 +8,6 @@ function Capabilities() {
     <div
       className="sectionContainer"
       id="capabilitiesContainer"
-      style={{ backgroundColor: "#505050" }}
     >
       <div className="leftHeader" style={{ width: "50vw" }}>
         <h1>Unrivaled Capabilities</h1>

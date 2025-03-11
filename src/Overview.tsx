@@ -7,7 +7,7 @@ function Overview() {
       className="sectionContainer"
       id="overviewContainer"
     >
-      <div className="leftHeader" id="overviewHeader">
+      <div className="leftHeader large" id="overviewHeader">
         <h1>A new generation of Global Military Intelligence</h1>
       </div>
 

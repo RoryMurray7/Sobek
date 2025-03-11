@@ -14,6 +14,7 @@ createRoot(document.getElementById("root")!).render(
     <Overview />
     <Tagline />
     <Capabilities />
+    <SatelliteDemo />
     <Gathering />
     <Analysis />
   </StrictMode>
