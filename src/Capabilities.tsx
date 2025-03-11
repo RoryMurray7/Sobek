@@ -10,10 +10,72 @@ function Capabilities() {
       id="capabilitiesContainer"
     >
       <div className="leftHeader" style={{ width: "50vw" }}>
-        <h1>Unrivaled Capabilities</h1>
+        <h1> Capabilities</h1>
       </div>
 
-      <div className="capabilitiesCardContainer">
+      <div className="capabilitiesColumnContainer">
+        <div className="capabilitiesColumn column1">
+
+          <div className="capabilitiesCard">
+            <img className="capabilitiesCardImage" src={droneImage}></img>
+            <p className="imageTitle">Aerial Reconnaissance</p>
+          </div>
+
+          <div className="capabilitiesCard">
+            <img className="capabilitiesCardImage" src={droneImage}></img>
+            <p className="imageTitle">Aerial Reconnaissance</p>
+          </div>
+
+        </div>
+
+        <div className="capabilitiesColumn column2">
+
+          <div className="capabilitiesCard">
+            <img className="capabilitiesCardImage" src={droneImage}></img>
+            <p className="imageTitle">Aerial Reconnaissance</p>
+          </div>
+
+          <div className="capabilitiesCard">
+            <img className="capabilitiesCardImage" src={droneImage}></img>
+            <p className="imageTitle">Aerial Reconnaissance</p>
+          </div>
+          
+        </div>
+
+        <div className="capabilitiesColumn column3">
+          
+          <div className="capabilitiesCard">
+            <img className="capabilitiesCardImage" src={droneImage}></img>
+            <p className="imageTitle">Aerial Reconnaissance</p>
+          </div>
+
+          <div className="capabilitiesCard">
+            <img className="capabilitiesCardImage" src={droneImage}></img>
+            <p className="imageTitle">Aerial Reconnaissance</p>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="capabilitiesCardContainer">
         <div className="capabilitiesCard">
           <img className="capabilitiesCardImage" src={droneImage}></img>
           <p className="imageTitle">Aerial Reconnaissance</p>
@@ -34,7 +96,7 @@ function Capabilities() {
         <div className="capabilitiesCard">
           <div className="capabilitiesCardImage"></div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

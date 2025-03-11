@@ -4,7 +4,7 @@ import TrueFocus from "./components/TrueFocus/TrueFocus";
 
 function Tagline() {
   return (
-    <div className="sectionContainer">
+    <div className="sectionContainer" id="taglineContainer">
       <div className="leftHeader large" id="overviewHeader">
         <div id="trueFocusContainer">
           <TrueFocus
