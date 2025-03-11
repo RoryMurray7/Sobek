@@ -10,7 +10,7 @@ function Capabilities() {
       id="capabilitiesContainer"
     >
       <div className="leftHeader" style={{ width: "50vw" }}>
-        <h1> Capabilities</h1>
+        <h1>Our Capabilities</h1>
       </div>
 
       <div className="capabilitiesColumnContainer">
@@ -43,7 +43,7 @@ function Capabilities() {
         </div>
 
         <div className="capabilitiesColumn column3">
-          
+
           <div className="capabilitiesCard">
             <img className="capabilitiesCardImage" src={droneImage}></img>
             <p className="imageTitle">Aerial Reconnaissance</p>
