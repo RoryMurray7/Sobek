@@ -7,11 +7,11 @@ gsap.registerPlugin(ScrollTrigger);
 const useScrollAnimation = () => {
   useEffect(() => {
     // Select all divs with the class "animated"
-    const animatedDivs = gsap.utils.toArray(".animated");
+    const animatedDivs = gsap.utils.toArray(".animated") as HTMLElement[];
 
     animatedDivs.forEach((div) => {
       gsap.fromTo(
-        div,
+        div as gsap.TweenTarget,
         { opacity: 0, y: 50 }, // Start invisible and slightly down
         {
           opacity: 1,
