@@ -228,17 +228,20 @@ li {
 }
 
 .buttonContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2vw;
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 2vw;
-  background-color: wheat;
 }
 
 .contactUsButton {
   width: 10vw;
   height: 3vw;
-  border-radius: 1vw;
-  background-color: #b76b27;
+  border-radius: 2vw;
+  background-color: #161616;
   color: white;
   font-size: 1.5vw;
   display: flex;

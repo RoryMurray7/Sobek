@@ -26,6 +26,11 @@ function Packages() {
             <li>Classified or proprietary intelligence</li>
             <li>Custom or tailored surveillance</li>
           </ul>
+          <div className="buttonContainer">
+            <div className="contactUsButton">
+              <p>Contact Us</p>
+            </div>
+          </div>
         </SpotlightCard>
         <SpotlightCard
           className="custom-spotlight-card"
@@ -73,6 +78,11 @@ function Packages() {
             <li>Unlimited operational intervention</li>
             <li>Any records of engagement</li>
           </ul>
+          <div className="buttonContainer">
+            <div className="contactUsButton">
+              <p>Contact Us</p>
+            </div>
+          </div>
         </SpotlightCard>
       </div>
     </div>
