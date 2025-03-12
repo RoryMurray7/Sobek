@@ -1,6 +1,7 @@
 .card-spotlight {
   width: 18vw;
   padding: 2vw;
+  padding-top: 0;
   position: relative;
   border-radius: 1.5rem;
   border: 1px solid #222;

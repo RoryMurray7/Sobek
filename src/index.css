@@ -154,13 +154,13 @@ img {
   background-color: white;
 }
 
-#pricingContainer {
+#packagesContainer {
   flex-direction: column;
   align-items: start;
   height: 100vh;
 }
 
-.pricingCardContainer {
+.packagesCardContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -168,7 +168,14 @@ img {
   height: 100%;
 }
 
-.pricingText {
+.packagesCardHeader {
+  height: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.packagesText {
   text-align: center;
 }
 
