@@ -1,5 +1,6 @@
 import "./index.css";
 import SpotlightCard from "./components/SpotlightCard/SpotlightCard";
+import { Link } from "react-router-dom";
 
 function Packages() {
   return (
@@ -85,6 +86,7 @@ function Packages() {
           </div>
         </SpotlightCard>
       </div>
+      <Link to="/terms-and-conditions">click</Link>
     </div>
   );
 }

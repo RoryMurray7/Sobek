@@ -1,18 +1,11 @@
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import ReactDOM from "react-dom/client";
 import "./index.css";
-import Header from "./Header.tsx";
-import Overview from "./Overview.tsx";
-import Tagline from "./Tagline.tsx";
-import Capabilities from "./Capabilities";
-import Packages from "./Packages";
+import App from "./App";
 
-createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <StrictMode>
-    <Header />
-    <Overview />
-    <Tagline />
-    <Capabilities />
-    <Packages />
+    <App />
   </StrictMode>
 );
