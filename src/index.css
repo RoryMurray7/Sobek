@@ -109,12 +109,11 @@ img {
 }
 
 .capabilitiesColumnContainer {
-  margin-left: -4vw;
-  margin-right: -4vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
+  width: 99vw;
+  align-self: center;
   height: fit-content;
 }
 
@@ -157,19 +156,21 @@ img {
 #packagesContainer {
   flex-direction: column;
   align-items: start;
-  height: 100vh;
+  height: 150vh;
 }
 
 .packagesCardContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
+  width: 90vw;
+  align-self: center;
   height: 100%;
 }
 
 .packagesCardHeader {
-  height: 8vw;
+  padding-top: 1.5vw;
+  height: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,8 +180,38 @@ img {
   text-align: center;
 }
 
+hr {
+  height: 1px;
+  background-color: #2f2f2f;
+  border: none;
+}
 
-/* .gatheringIcons {
-  width: 15vw;
-  height: auto;
+li {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2vw;
+  margin-left: -1.5vw;
+  margin-bottom: 1vw;
+}
+
+.included li::before {
+  content: "";
+  width: 1.5vw;
+  height: 1.5vw;
+  position: absolute;
+  left: 2vw;
+  margin-top: 0.3vw;
+  background-image: url(./assets/correct.png);
+  background-size: contain;
+}
+
+.notIncluded li::before {
+  content: "";
+  width: 1.5vw;
+  height: 1.5vw;
+  position: absolute;
+  left: 2vw;
+  margin-top: 0.25vw;
+  background-image: url(./assets/remove.png);
+  background-size: contain;
 }
