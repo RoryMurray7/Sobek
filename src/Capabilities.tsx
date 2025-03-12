@@ -1,8 +1,6 @@
-import "./Capabilities.css";
 import baseSatellite from "./assets/baseSatellite.png";
 import droneImage from "./assets/parrotAnafi.png";
 import radarDish from "./assets/radarDish.png";
-import useScrollAnimation from "./UseScrollAnimation";
 
 function Capabilities() {
   return (
