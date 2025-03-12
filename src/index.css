@@ -191,30 +191,31 @@ li {
   align-items: flex-start; /* Aligns icon with the first line of text */
   gap: 0.8rem; /* Consistent spacing */
   font-size: 0.5rem; /* Stable font size */
-  line-height: 1.4; /* Improves readability */
   margin-bottom: 0.5rem;
 }
 
 .included li::before {
   content: "";
-  display: inline-flex; /* Keeps icon inline */
+  display: inline-flex;
   width: 0.5rem;
   height: 0.5rem;
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  flex-shrink: 0; /* Prevents the icon from resizing unexpectedly */
-  margin-top: 0.1rem; /* Adjusts vertical positioning */
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  margin-left: -1rem;
   background-image: url(./assets/correct.png);
 }
 
 .notIncluded li::before {
   content: "";
-  display: inline-flex; /* Keeps icon inline */
+  display: inline-flex;
   width: 0.5rem;
   height: 0.5rem;
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  flex-shrink: 0; /* Prevents the icon from resizing unexpectedly */
-  margin-top: 0.1rem; /* Adjusts vertical positioning */
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  margin-left: -1rem;
   background-image: url(./assets/remove.png);
 }
