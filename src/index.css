@@ -154,14 +154,23 @@ img {
   background-color: white;
 }
 
+#pricingContainer {
+  flex-direction: column;
+  align-items: start;
+  height: 100vh;
+}
+
 .pricingCardContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
+.pricingText {
+  text-align: center;
+}
 
 
 /* .gatheringIcons {
