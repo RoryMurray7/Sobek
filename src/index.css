@@ -224,8 +224,8 @@ li {
   margin-left: -1rem;
   background-image: url(./assets/circle.png);
 }
-
-@media (max-width: 2500px) {
+/* This is temporary idek why */
+@media (max-width: 2500px) { 
   .notIncluded li::before,
   .included li::before {
     margin-left: -2rem;
