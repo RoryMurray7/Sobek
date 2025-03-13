@@ -12,8 +12,8 @@ function Tagline() {
             manualMode={false}
             blurAmount={5}
             borderColor="#b76b2c"
-            animationDuration={2}
-            pauseBetweenAnimations={3}
+            animationDuration={1.5}
+            pauseBetweenAnimations={2}
           />
         </div>
         <p id="taglineDescription">
