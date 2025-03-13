@@ -1,9 +1,7 @@
-import droneImage from "./assets/parrotAnafi.png";
-
 function Capabilities() {
   return (
     <div className="sectionContainer" id="capabilitiesContainer">
-      <div className="leftHeader" style={{ width: "50vw", marginLeft: "3vw" }}>
+      <div className="leftHeader" style={{ width: "50vw", marginTop: "5vw" }}>
         <h1>Our Capabilities</h1>
       </div>
 
