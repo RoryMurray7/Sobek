@@ -3,43 +3,37 @@ import droneImage from "./assets/parrotAnafi.png";
 function Capabilities() {
   return (
     <div className="sectionContainer" id="capabilitiesContainer">
-      <div className="leftHeader" style={{ width: "50vw" }}>
+      <div className="leftHeader" style={{ width: "50vw", marginLeft: "3vw" }}>
         <h1>Our Capabilities</h1>
       </div>
 
       <div className="capabilitiesColumnContainer">
         <div className="capabilitiesColumn column1">
           <div className="capabilitiesCard">
-            <img className="capabilitiesCardImage" src={droneImage}></img>
             <p className="imageTitle">Aerial Reconnaissance</p>
           </div>
 
           <div className="capabilitiesCard">
-            <img className="capabilitiesCardImage" src={droneImage}></img>
             <p className="imageTitle">Aerial Reconnaissance</p>
           </div>
         </div>
 
         <div className="capabilitiesColumn column2">
           <div className="capabilitiesCard">
-            <img className="capabilitiesCardImage" src={droneImage}></img>
             <p className="imageTitle">Aerial Reconnaissance</p>
           </div>
 
           <div className="capabilitiesCard">
-            <img className="capabilitiesCardImage" src={droneImage}></img>
             <p className="imageTitle">Aerial Reconnaissance</p>
           </div>
         </div>
 
         <div className="capabilitiesColumn column3">
           <div className="capabilitiesCard">
-            <img className="capabilitiesCardImage" src={droneImage}></img>
             <p className="imageTitle">Aerial Reconnaissance</p>
           </div>
 
           <div className="capabilitiesCard">
-            <img className="capabilitiesCardImage" src={droneImage}></img>
             <p className="imageTitle">Aerial Reconnaissance</p>
           </div>
         </div>

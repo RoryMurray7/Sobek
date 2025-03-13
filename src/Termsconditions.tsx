@@ -3,7 +3,7 @@ import "./index.css";
 function TermsAndConditions() {
   return (
     <div id="termsAndConditionsContainer">
-      <h1>Heyy</h1>
+      <h1>Someone needs to write a load of waffle here</h1>
     </div>
   );
 }

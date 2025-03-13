@@ -141,8 +141,9 @@ img {
   flex-direction: column;
   align-items: center;
   border-style: solid;
-  border-color: #b76b27;
-  background-color: #707070;
+  border-color: #505050;
+  border-width: 1px;
+  background-color: #2e2e2e;
   border-radius: 1vw;
 }
 
@@ -155,10 +156,13 @@ img {
 
 #packagesContainer {
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   height: 120vh;
 }
 
+#packagesHeader {
+  text-align: center;
+}
 .packagesCardContainer {
   display: flex;
   flex-direction: row;

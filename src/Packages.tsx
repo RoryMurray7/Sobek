@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Packages() {
   return (
     <div className="sectionContainer" id="packagesContainer">
-      <div className="large" id="overviewHeader">
+      <div className="large" id="packagesHeader">
         <h1>Packages</h1>
       </div>
       <div className="packagesCardContainer">
