@@ -1,6 +1,6 @@
 import "./index.css";
 
-function TermsAndConditions() {
+function Termsofservice() {
   return (
     <div id="termsOfServiceContainer">
       <h1>Someone needs to write a load of waffle here</h1>
@@ -8,4 +8,4 @@ function TermsAndConditions() {
   );
 }
 
-export default TermsAndConditions;
+export default Termsofservice;
