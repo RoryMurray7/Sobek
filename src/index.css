@@ -225,7 +225,7 @@ li {
   background-image: url(./assets/circle.png);
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 2500px) {
   .notIncluded li::before,
   .included li::before {
     margin-left: -2rem;
