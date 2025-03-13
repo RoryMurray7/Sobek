@@ -86,7 +86,9 @@ function Packages() {
           </div>
         </SpotlightCard>
       </div>
-      <Link to="/terms-and-conditions">click</Link>
+      <Link to="/terms-and-conditions">
+        <h6>*Click here to view our terms and conditions</h6>
+      </Link>
     </div>
   );
 }
