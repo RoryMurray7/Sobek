@@ -158,7 +158,7 @@ img {
 #packagesContainer {
   flex-direction: column;
   align-items: center;
-  height: 120vh;
+  height: 130vh;
 }
 
 #packagesHeader {
@@ -245,6 +245,9 @@ li {
   :root {
     font-size: 1.5rem;
   }
+  .large {
+    font-size: 2.4vw;
+  }
 }
 
 .buttonContainer {
@@ -275,12 +278,20 @@ a {
   color: white;
 }
 
-#termsAndConditionsContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+.tiny {
+  font-size: 0.6rem;
+}
+.center{
   width: 100%;
+  align-self: center;
+  text-align: center;
+}
+.linksContainer {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5vw;
+  color: white;
+  text-decoration: underline;
 }

@@ -8,6 +8,8 @@ import Tagline from "./Tagline.tsx";
 import Capabilities from "./Capabilities";
 import Packages from "./Packages";
 import TermsAndConditions from "./Termsconditions.tsx";
+import Footer from "./Footer.tsx";
+import Privacypolicy from "./Privacypolicy.tsx";
 
 function App() {
   return (
@@ -25,10 +27,10 @@ function App() {
             </>
           }
         />
-
-        {/* Terms and Conditions page */}
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<Privacypolicy />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

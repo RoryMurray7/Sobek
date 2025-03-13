@@ -1,7 +1,7 @@
 function Capabilities() {
   return (
     <div className="sectionContainer" id="capabilitiesContainer">
-      <div className="leftHeader" style={{ width: "50vw", marginTop: "5vw" }}>
+      <div className="leftHeader large" style={{ width: "50vw", marginTop: "5vw" }}>
         <h1>Our Capabilities</h1>
       </div>
 
