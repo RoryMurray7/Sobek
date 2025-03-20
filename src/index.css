@@ -308,8 +308,14 @@ a {
   margin-bottom: 0rem;
   margin-top: 1rem;
   font-size: 0.8rem;
-
 }
-#termsOfServiceContainer h4, p {
+
+#termsOfServiceContainer h6 {
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+}
+
+#termsOfServiceContainer h4, p, h6 {
   text-align: left;
 }
