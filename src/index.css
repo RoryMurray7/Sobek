@@ -159,7 +159,7 @@ img {
 #packagesContainer {
   flex-direction: column;
   align-items: center;
-  height: 130vh;
+  height: 33rem;
 }
 
 #packagesHeader {
@@ -295,6 +295,10 @@ a {
   gap: 5vw;
   color: white;
   text-decoration: underline;
+}
+
+#termsOfServiceContainer {
+  height: 86vh;
 }
 
 #termsOfServiceContainer p {

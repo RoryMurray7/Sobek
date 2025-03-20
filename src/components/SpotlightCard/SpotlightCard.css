@@ -1,12 +1,12 @@
 .card-spotlight {
   width: 10rem;
-  height: 38vw;
+  height: 22rem;
   padding: 2vw;
   padding-top: 0;
   padding-bottom: 0;
   position: relative;
   border-radius: 1vw;
-  border: 1px solid #222;
+  border: 1px solid #505050;
   background-color: #111;
   overflow: hidden;
   --mouse-x: 50%;
