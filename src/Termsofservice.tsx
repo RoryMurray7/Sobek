@@ -4,7 +4,7 @@ import { Link } from "react-router";
 function Termsofservice() {
   return (
     <div className="center" id="termsOfServiceContainer">
-      <h1 style={{marginBottom: "-2rem"}}>Terms of Service</h1>
+      <h1 style={{marginBottom: "0"}}>Terms of Service</h1>
       <h6 style={{color: "grey"}}>Last Updated: 13/03/2025</h6>
       <h4>1. Acceptance of Terms</h4>
       <p>By using our website and services, You agree that you have read, understood and are bound by these terms.</p>

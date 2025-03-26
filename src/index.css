@@ -192,7 +192,7 @@ hr {
   border: none;
 }
 
-li {
+#packagesContainer li {
   display: flex;
   align-items: flex-start;
   gap: 0.8rem;
@@ -297,10 +297,6 @@ a {
   text-decoration: underline;
 }
 
-#termsOfServiceContainer {
-  height: 86vh;
-}
-
 #termsOfServiceContainer p {
   font-size: 0.5rem;
   margin-top: 0rem;
@@ -320,6 +316,10 @@ a {
   font-size: 0.6rem;
 }
 
-#termsOfServiceContainer h4, p, h6 {
+#termsOfServiceContainer li {
+  margin-left: 0;
+}
+
+#termsOfServiceContainer h4, p, li {
   text-align: left;
 }
