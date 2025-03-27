@@ -16,6 +16,7 @@
 	margin-left: 4vw;
 	margin-right: 4vw;
 	font-size: 2.5rem;
+	scroll-behavior: smooth;
 }
 
 .large {
@@ -158,14 +159,19 @@ img {
 
 .cardContent {
 	margin: 0 0.5rem;
-	font-size: 0.9rem;
+	font-size: 0.6rem;
+	text-align: center;
+}
+
+.imageTitle {
+	font-size: 1rem;
 	text-align: center;
 }
 
 #packagesContainer {
 	flex-direction: column;
 	align-items: center;
-	height: 33rem;
+	height: 29rem;
 }
 
 #packagesHeader {
@@ -202,8 +208,9 @@ hr {
   display: flex;
   align-items: flex-start;
   gap: 0.8rem;
-  font-size: 0.5rem;
+  font-size: 0.53rem;
   margin-bottom: 0.5rem;
+}
 
 li {
 	display: flex;
@@ -311,7 +318,8 @@ a {
 }
 
 #termsOfServiceContainer {
-	height: 86vh;
+	height: fit-content;
+	margin-bottom: 10vh;
 }
 
 #termsOfServiceContainer p {

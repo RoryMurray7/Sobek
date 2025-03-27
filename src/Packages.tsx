@@ -34,7 +34,7 @@ function Packages() {
         </SpotlightCard>
         <SpotlightCard
           className="custom-spotlight-card"
-          spotlightColor="rgba(77, 77, 77, 0.5)"
+          spotlightColor="rgba(110, 110, 110, 0.5)"
         >
           <div className="packagesCardHeader">
             <h5 className="packagesText">Advanced Intelligence</h5>
@@ -49,7 +49,6 @@ function Packages() {
           </ul>
           <ul className="notIncluded">
             <li>Full-spectrum asset deployment</li>
-            <li>Direct kinetic support</li>
             <li>Unrestricted access to classified intelligence</li>
           </ul>
           <div className="buttonContainer">
@@ -60,7 +59,7 @@ function Packages() {
         </SpotlightCard>
         <SpotlightCard
           className="custom-spotlight-card"
-          spotlightColor="rgba(77, 77, 77, 0.5)"
+          spotlightColor="rgba(110, 110, 110, 0.5)"
         >
           <div className="packagesCardHeader">
             <h5 className="packagesText">Elite & Covert Operations Support</h5>
@@ -72,11 +71,8 @@ function Packages() {
             <li>Advanced counterintelligence and cybersecurity assessments</li>
             <li>Direct liaison with specialized assets</li>
             <li>Deep reconnaissance and threat analysis</li>
-          </ul>
-          <ul className="notIncluded">
-            <li>Public acknowledgment or transparency</li>
-            <li>Unlimited operational intervention</li>
-            <li>Any records of engagement</li>
+            <li>No records of engagement</li>
+            <li>Unlimited Operational Intervention</li>
           </ul>
           <div className="buttonContainer">
             <div className="contactUsButton">

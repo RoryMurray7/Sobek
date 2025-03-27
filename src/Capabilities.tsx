@@ -111,7 +111,7 @@ function Capabilities() {
             <div className="capabilitiesCard">
               <p className="imageTitle">Social Data Extraction</p>
               <p className="cardContent">
-                We actively monitor all public online interactions,
+                We actively monitor all public online interactions, Error deserunt iusto omnis est dicta. Quia eius consequatur consequuntur perferendis quia illo amet sed. Dolorem accusamus sequi quo accusamus aut debitis temporibus
               </p>
             </div>
           </FadeContent>
